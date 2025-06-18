@@ -65,7 +65,7 @@ end
 
 
 Then('I should be on the brag page') do
-  expect(current_path).to eq(brag_path)
+  expect(page).to have_current_path(brag_path)
 end
 
 Then('I should be on the quests index page') do
