@@ -9,6 +9,7 @@ development:
   password: <%= ENV["DB_PASSWORD"] %>
   port: <%= ENV["DB_PORT"] %>
   database: <%= ENV["DB_NAME"] %>_development
+  # url: <%=ENV["DATABASE_URL"]%>
 
 test:
   <<: *default
@@ -17,6 +18,7 @@ test:
   password: <%= ENV["DB_PASSWORD"] %>
   port: <%= ENV["DB_PORT"] %>
   database: <%= ENV["DB_NAME"] %>_test
+    # url: <%=ENV["DATABASE_URL"]%>
 
 production:
   primary:
